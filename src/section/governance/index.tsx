@@ -44,16 +44,16 @@ export default function GovernanceSection() {
         </div>
         <Divider />
         <div className="flex flex-col gap-5">
-          <div className="flex md:flex-row flex-col justify-between items-center gap-5">
+          <div className="flex lg:flex-row flex-col justify-between items-center gap-5">
             <div className="lg:w-6/12 w-full">
               <Input placeholder="Search for proposals" className="w-64" />
             </div>
-            <div className="flex md:flex-row flex-col gap-3 w-full lg:w-6/12 md:justify-around">
+            <div className="flex md:flex-row flex-col gap-3 w-full lg:w-6/12 lg:justify-end">
               {governanceFilterOptions.map((item, index) => {
                 return (
                   <button
                     key={index}
-                    className={`bg-light-gray dark:bg-gray2 capitalize px-3 py-1 rounded-lg text-sm ${selectedOption === item ? "bg-primary" : ""}`}
+                    className={`bg-light-gray w-24 dark:bg-gray2 capitalize py-1 rounded-lg text-sm ${selectedOption === item ? "bg-primary" : ""}`}
                   >
                     {item}
                   </button>
